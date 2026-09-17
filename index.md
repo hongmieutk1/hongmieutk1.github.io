@@ -1,37 +1,150 @@
-## Welcome to GitHub Pages
+# Software Development Study Hub
 
-You can use the [editor on GitHub](https://github.com/hongmieutk1/hongmieutk1.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+## My learning journey
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+I am building a personal knowledge base for software development, covering the essential skills needed to become a well-rounded developer: programming fundamentals, system design, web development, databases, testing, DevOps, and software engineering best practices.
 
-### Markdown
+This page acts as a study dashboard for tracking progress, organizing learning topics, and staying focused on practical skills that matter in real-world projects.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+---
 
-```markdown
-Syntax highlighted code block
+## Focus areas
 
-# Header 1
-## Header 2
-### Header 3
+### 1. Programming foundations
 
-- Bulleted
-- List
+- Variables, data structures, algorithms, and complexity
+- Object-oriented and functional programming concepts
+- Clean code, debugging, and problem solving
+- Version control with Git and GitHub
 
-1. Numbered
-2. List
+### 2. Frontend development
 
-**Bold** and _Italic_ and `Code` text
+- HTML, CSS, and responsive design
+- JavaScript and TypeScript
+- React, state management, and component design
+- UI/UX awareness and accessibility basics
 
-[Link](url) and ![Image](src)
-```
+### 3. Backend development
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+- REST APIs and server architecture
+- Node.js, Python, Java, or C# backend workflows
+- Authentication, authorization, and security best practices
+- API design, validation, and error handling
 
-### Jekyll Themes
+### 4. Databases and data management
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hongmieutk1/hongmieutk1.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+- SQL fundamentals and query optimization
+- PostgreSQL and MySQL concepts
+- NoSQL databases and use cases
+- Schema design and data modeling
 
-### Support or Contact
+### 5. System design and software architecture
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- Monolith vs microservices
+- Scalability, reliability, and performance
+- Caching, load balancing, and message queues
+- Designing systems for real production workloads
+
+### 6. DevOps and deployment
+
+- Linux basics and command line workflows
+- Docker and container concepts
+- CI/CD pipelines
+- Cloud basics: AWS, Azure, or GCP
+
+### 7. Quality and collaboration
+
+- Testing strategies: unit, integration, and end-to-end testing
+- Agile workflows, sprint planning, and project management
+- Code review habits and engineering discipline
+- Documentation and team communication
+
+---
+
+## Current roadmap
+
+### Phase 1: Core fundamentals
+
+- Learn programming logic and problem solving
+- Practice with small coding exercises
+- Build clean, readable solutions
+
+### Phase 2: Web development
+
+- Learn frontend basics and modern UI frameworks
+- Build small full-stack apps
+- Connect frontend to backend APIs
+
+### Phase 3: Backend and architecture
+
+- Work with databases and API design
+- Understand authentication, caching, and deployment
+- Learn how to scale systems
+
+### Phase 4: Professional engineering
+
+- Write tests and improve code quality
+- Learn DevOps and deployment workflows
+- Build portfolio projects and document results
+
+---
+
+## Recommended stack
+
+### Essential tools
+
+- Git and GitHub
+- VS Code
+- Docker
+- Postman
+- Linux terminal
+
+### Common technologies to study
+
+- HTML / CSS / JavaScript / TypeScript
+- React / Next.js
+- Node.js / Express
+- Python / FastAPI or Django
+- SQL / PostgreSQL
+- AWS or Azure basics
+
+---
+
+## Study habits
+
+A strong software developer is not only technical but also disciplined. I focus on:
+
+- learning by building small projects
+- revising core concepts regularly
+- documenting what I learn and how I apply it
+- solving real problems instead of only watching tutorials
+- practicing consistently, even with short daily sessions
+
+---
+
+## Example project ideas
+
+- Personal portfolio website
+- To-do app with authentication
+- Blog or note-taking application
+- E-commerce product page backend
+- Task management dashboard with database integration
+- Weather or finance tracker with API integration
+
+---
+
+## Personal learning goal
+
+My goal is to become a capable software developer who can design, build, test, and deploy useful digital products. I want to keep learning from practical experience, strengthen my fundamentals, and eventually contribute to real projects with confidence.
+
+> “Learn by building, document by practicing, and improve every week.”
+
+---
+
+## Quick status
+
+- Learning: web development, backend architecture, and database design
+- Strengthening: problem solving and clean coding habits
+- Next milestone: build a small full-stack application end-to-end
+
+If you want, this page can later be expanded into a full portfolio with sections for projects, experience, resume, blog posts, and contact information.
