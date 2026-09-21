@@ -1,0 +1,23 @@
+---
+layout: default
+---
+{% assign topic = site.data.topics | where: "id", page.topic | first %}
+<article class="prose">
+  <p class="eyebrow">{{ topic.title | default: page.topic }}</p>
+  <h1>{{ page.title }}</h1>
+  {% if page.updated %}
+    <p class="meta">Updated {{ page.updated }}</p>
+  {% endif %}
+  {% if page.tags %}
+    <p class="tags">
+      {% for tag in page.tags %}
+        <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </p>
+  {% endif %}
+  <nav class="toc" aria-label="On this page" hidden>
+    <p class="toc__label">On this page</p>
+    <ol class="toc__list"></ol>
+  </nav>
+  {{ content }}
+</article>

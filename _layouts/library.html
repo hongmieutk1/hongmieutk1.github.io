@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<article class="prose">
+  <p class="eyebrow">Library</p>
+  <h1>{{ page.title }}</h1>
+  {{ content }}
+  <label class="search">
+    <span class="visually-hidden">Filter notes</span>
+    <input type="search" id="note-filter" placeholder="Filter notes by title or topic…" autocomplete="off">
+  </label>
+  {% for topic in site.data.topics %}
+    {% assign notes = site.notes | where: "topic", topic.id | sort: "title" %}
+    <section class="topic-block" data-topic="{{ topic.id }}">
+      <h2>
+        <a href="{{ '/topics/' | append: topic.id | append: '/' | relative_url }}">{{ topic.title }}</a>
+        <span class="count">{{ notes.size }}</span>
+      </h2>
+      {% if notes.size == 0 %}
+        <p class="empty">Nothing here yet.</p>
+      {% else %}
+        <ul class="note-list">
+          {% for note in notes %}
+            <li data-filter="{{ note.title | append: ' ' | append: topic.title | downcase | escape }}">
+              <a href="{{ note.url | relative_url }}">
+                <strong>{{ note.title }}</strong>
+                {% if note.summary %}<span>{{ note.summary }}</span>{% endif %}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </section>
+  {% endfor %}
+</article>

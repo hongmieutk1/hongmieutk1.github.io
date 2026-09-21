@@ -1,0 +1,20 @@
+<aside class="sidebar" aria-label="Notes">
+  <p class="sidebar__label">Notes</p>
+  {% for topic in site.data.topics %}
+    {% assign notes = site.notes | where: "topic", topic.id | sort: "title" %}
+    <details class="sidebar__group" {% if page.topic == topic.id %}open{% endif %}>
+      <summary>{{ topic.title }}</summary>
+      {% if notes.size == 0 %}
+        <p class="sidebar__empty">Empty</p>
+      {% else %}
+        <ul>
+          {% for note in notes %}
+            <li>
+              <a href="{{ note.url | relative_url }}" {% if page.url == note.url %}aria-current="page"{% endif %}>{{ note.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </details>
+  {% endfor %}
+</aside>

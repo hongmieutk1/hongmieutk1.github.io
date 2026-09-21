@@ -1,0 +1,19 @@
+<header class="site-header">
+  <a class="brand" href="{{ '/' | relative_url }}">
+    <span class="brand__mark" aria-hidden="true">TK</span>
+    <span class="brand__text">
+      <strong>{{ site.title }}</strong>
+      <em>{{ site.tagline }}</em>
+    </span>
+  </a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+  <nav class="site-nav" id="site-nav" aria-label="Primary">
+    <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a>
+    <a href="{{ '/notes/' | relative_url }}" {% if page.url == '/notes/' %}aria-current="page"{% endif %}>Library</a>
+    {% for topic in site.data.topics %}
+      {% assign topic_url = '/topics/' | append: topic.id | append: '/' %}
+      <a href="{{ topic_url | relative_url }}" {% if page.url == topic_url %}aria-current="page"{% endif %}>{{ topic.title }}</a>
+    {% endfor %}
+  </nav>
+  <button class="theme-toggle" type="button" aria-label="Toggle color theme">Theme</button>
+</header>

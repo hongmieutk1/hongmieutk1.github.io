@@ -1,0 +1,15 @@
+- id: java-core
+  title: Java Core
+  blurb: Language, OOP, collections, concurrency, and JVM basics.
+- id: spring
+  title: Spring
+  blurb: IoC, Spring Boot, REST, data access, and common patterns.
+- id: sql
+  title: SQL
+  blurb: Queries, joins, indexing, transactions, and schema design.
+- id: system-design
+  title: System Design
+  blurb: Scalability, caching, queues, and how real systems fit together.
+- id: leetcode
+  title: LeetCode
+  blurb: Problem write-ups with approach, complexity, and Java solutions.

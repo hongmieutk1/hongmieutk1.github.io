@@ -1,3 +1,42 @@
-title: Software Development Study Hub
-description: A personal GitHub Pages site for learning software development, programming fundamentals, web development, backend systems, and engineering best practices.
-theme: jekyll-theme-time-machine
+encoding: utf-8
+
+title: Truong Kiet
+tagline: Notes from learning to build
+description: Personal introduction and study notes on Java, Spring, SQL, system design, and LeetCode.
+url: "https://hongmieutk1.github.io"
+baseurl: ""
+
+author:
+  name: Truong Kiet
+  github: hongmieutk1
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+
+permalink: pretty
+highlighter: rouge
+
+collections:
+  notes:
+    output: true
+    permalink: /notes/:path/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: note
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
